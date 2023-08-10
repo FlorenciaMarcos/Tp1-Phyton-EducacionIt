@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de la Universidad</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="../img/e-universidad.png" alt="Banner de la Universidad" />
+      <h1 class="centered">Gestión de la Universidad</h1>
+      <div class="alumno">Ingresar Alumno</div>
+      <form id="alumnoForm"></form>
+
+      <div class="form-container">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" required="required" />
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required="required" />
+
+        <label for="materias">Materia:</label>
+        <select id="materias">
+          <option value="Licenciatura en Informàtica">
+            Licenciatura en Informàtica
+          </option>
+          <option value="Programaciòn Lògica">Programaciòn Lògica</option>
+          <option value="Àlgebra">Àlgebra</option>
+          <option value="Programaciòn Orientada a Objetos">
+            Programaciòn Orientada a Objetos
+          </option>
+          <option value="Licenciatura en Economia">
+            Licenciatura en Economia
+          </option>
+          <option value="Administracion">Administracion I</option>
+          <option value="contabilidad">Contabilidad</option>
+          <option value="Naturales">Principios de Economia</option>
+          <option value="Abogacia">Abogacia</option>
+          <option value="Introduccion al Derecho">
+            Introduccion al Derecho
+          </option>
+          <option value="Teoria de la Persona">Teoria de la Persona</option>
+          <option value="Derecho Penal I">Derecho Penal I</option>
+        </select>
+
+        <button id="guardarBtn">Guardar</button>
+      </div>
+
+      <h2 class="centered">Control de Registro</h2>
+      <hr />
+      <div class="info-container">
+        <div class="info-item">
+          <h3>Estudiante</h3>
+          <p id="alumnoInfo"></p>
+        </div>
+
+        <div class="info-item">
+          <h3>Edad</h3>
+          <p id="edadInfo"></p>
+        </div>
+
+        <div class="info-item">
+          <h3>Materia</h3>
+          <ul id="materiasInfo"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
